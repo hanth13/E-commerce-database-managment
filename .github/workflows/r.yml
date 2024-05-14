@@ -36,11 +36,11 @@ jobs:
           
       - name: Execute R script
         run: |
-          Rscript R_codes/Workflow.R
+          Rscript R_script/Workflow.R
           
       - name: Execute Data Analysis
         run: |
-          Rscript R_codes/Query_workflow.R
+          Rscript R_script/Query_workflow.R
       - name: Add database changes and commit
         run: |
           git config --global user.email "hanth.ibc55@gmail.com"
